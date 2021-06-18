@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/itpanhao_spring_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_ioc_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_tx/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_mvc_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_test/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_spring_exception/pom.xml" />
+        <option value="$PROJECT_DIR$/itpnahao_mybatis_quick/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_mybatis_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_mybatis_mapper/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_mybatis_config/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_mybatis_multi/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_mybatis_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/itpanhao_ssm/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/itpanhao_spring_aop" />
+  </component>
+</project>

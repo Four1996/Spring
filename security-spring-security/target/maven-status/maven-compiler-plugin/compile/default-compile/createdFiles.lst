@@ -1,0 +1,6 @@
+com/ph/security/springmvc/config/WebConfig.class
+com/ph/security/springmvc/controller/LoginController.class
+com/ph/security/springmvc/config/ApplicationConfig.class
+com/ph/security/springmvc/init/SpringSecurityApplicationInitializer.class
+com/ph/security/springmvc/init/SpringApplicationINitializer.class
+com/ph/security/springmvc/config/WebSecurityConfig.class

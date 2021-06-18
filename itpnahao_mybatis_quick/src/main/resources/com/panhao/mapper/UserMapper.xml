@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userMapper">
+<!--    查询操作-->
+    <select id="findAll" resultType="user">
+        select * from user;
+    </select>
+<!--    插入操作-->
+    <insert id="save" parameterType="com.panhao.domain.User">
+        insert into user values(#{id},#{username},#{password})
+    </insert>
+<!--    修改数据-->
+    <update id="update" parameterType="com.panhao.domain.User">
+        update user set username=#{username},password=#{password} where id=#{id}
+    </update>
+<!--    删除操作-->
+    <delete id="delete" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+<!--    查询一个对象:根据id进行查询-->
+    <select id="findById" parameterType="int" resultType="user">
+        select * from user where id=#{id}
+    </select>
+</mapper>

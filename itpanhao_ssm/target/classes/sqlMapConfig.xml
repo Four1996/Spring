@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    加载properties文件-->
+    <properties resource="jdbc.properties"></properties>
+<!--    定义别名-->
+    <typeAliases>
+<!--        <typeAlias type="com.panhao.domain.Account" alias="account"></typeAlias>-->
+        <package name="com.panhao.domain"/>
+    </typeAliases>
+
+    <!--    环境-->
+        <environments default="development">
+            <environment id="development">
+                <transactionManager type="JDBC"></transactionManager>
+                <dataSource type="POOLED">
+                    <property name="driver" value="${jdbc.driver}"/>
+                    <property name="url" value="${jdbc.url}"/>
+                    <property name="username" value="${jdbc.user}"/>
+                    <property name="password" value="${jdbc.password}"/>
+                </dataSource>
+            </environment>
+        </environments>
+    <!--    加载映射-->
+    <mappers>
+<!--        <mapper resource="com/panhao/mapper/AccountMapper.xml"></mapper>-->
+        <package name="com.panhao.mapper"/>
+    </mappers>
+
+</configuration>

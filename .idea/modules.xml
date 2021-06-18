@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_mybatis_anno/itpanhao_mybatis_anno.iml" filepath="$PROJECT_DIR$/itpanhao_mybatis_anno/itpanhao_mybatis_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_mybatis_config/itpanhao_mybatis_config.iml" filepath="$PROJECT_DIR$/itpanhao_mybatis_config/itpanhao_mybatis_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_mybatis_dao/itpanhao_mybatis_dao.iml" filepath="$PROJECT_DIR$/itpanhao_mybatis_dao/itpanhao_mybatis_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_mybatis_mapper/itpanhao_mybatis_mapper.iml" filepath="$PROJECT_DIR$/itpanhao_mybatis_mapper/itpanhao_mybatis_mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_mybatis_multi/itpanhao_mybatis_multi.iml" filepath="$PROJECT_DIR$/itpanhao_mybatis_multi/itpanhao_mybatis_multi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_aop/itpanhao_spring_aop.iml" filepath="$PROJECT_DIR$/itpanhao_spring_aop/itpanhao_spring_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_exception/itpanhao_spring_exception.iml" filepath="$PROJECT_DIR$/itpanhao_spring_exception/itpanhao_spring_exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_interceptor/itpanhao_spring_interceptor.iml" filepath="$PROJECT_DIR$/itpanhao_spring_interceptor/itpanhao_spring_interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_ioc/itpanhao_spring_ioc.iml" filepath="$PROJECT_DIR$/itpanhao_spring_ioc/itpanhao_spring_ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_ioc_anno/itpanhao_spring_ioc_anno.iml" filepath="$PROJECT_DIR$/itpanhao_spring_ioc_anno/itpanhao_spring_ioc_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_jdbc/itpanhao_spring_jdbc.iml" filepath="$PROJECT_DIR$/itpanhao_spring_jdbc/itpanhao_spring_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_mvc/itpanhao_spring_mvc.iml" filepath="$PROJECT_DIR$/itpanhao_spring_mvc/itpanhao_spring_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_mvc_anno/itpanhao_spring_mvc_anno.iml" filepath="$PROJECT_DIR$/itpanhao_spring_mvc_anno/itpanhao_spring_mvc_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_test/itpanhao_spring_test.iml" filepath="$PROJECT_DIR$/itpanhao_spring_test/itpanhao_spring_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_tx/itpanhao_spring_tx.iml" filepath="$PROJECT_DIR$/itpanhao_spring_tx/itpanhao_spring_tx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_spring_tx_anno/itpanhao_spring_tx_anno.iml" filepath="$PROJECT_DIR$/itpanhao_spring_tx_anno/itpanhao_spring_tx_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpanhao_ssm/itpanhao_ssm.iml" filepath="$PROJECT_DIR$/itpanhao_ssm/itpanhao_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itpnahao_mybatis_quick/itpnahao_mybatis_quick.iml" filepath="$PROJECT_DIR$/itpnahao_mybatis_quick/itpnahao_mybatis_quick.iml" />
+    </modules>
+  </component>
+</project>

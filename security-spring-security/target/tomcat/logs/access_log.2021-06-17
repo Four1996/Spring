@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security HTTP/1.1" 302 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security/ HTTP/1.1" 302 - http-bio-8080-exec-4 96
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security/ HTTP/1.1" 302 - http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security/login HTTP/1.1" 200 1431 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:18 +0800] "GET /security-spring-security/login HTTP/1.1" 200 1431 http-bio-8080-exec-6 1
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:22 +0800] "POST /security-spring-security/login HTTP/1.1" 200 12 http-bio-8080-exec-8 39
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:25 +0800] "GET /security-spring-security/r/r1 HTTP/1.1" 200 14 http-bio-8080-exec-9 6
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:26 +0800] "GET /security-spring-security/r/r1 HTTP/1.1" 200 14 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:30 +0800] "GET /security-spring-security/r/r2 HTTP/1.1" 403 979 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:34 +0800] "GET /security-spring-security/r/r1 HTTP/1.1" 200 14 http-bio-8080-exec-10 2
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:39 +0800] "GET /security-spring-security/logout HTTP/1.1" 200 1040 http-bio-8080-exec-10 1
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:41 +0800] "POST /security-spring-security/logout HTTP/1.1" 302 - http-bio-8080-exec-10 2
+0:0:0:0:0:0:0:1 - - [17/Jun/2021:15:39:41 +0800] "GET /security-spring-security/login?logout HTTP/1.1" 200 1507 http-bio-8080-exec-10 1

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <import resource="applicationContext_product.xml"></import>
+    <import resource="applicationContext_sale.xml"></import>
+
+<!--    <bean id="userDao" class="com.itpanhao.dao.impl.UserDaoImpl" scope="singleton" init-method="init" destroy-method="destory"></bean>-->
+<!--<bean id="userDao" class="com.itpanhao.factory.StaticFactory" factory-method="geyUserDao"></bean>-->
+<!--    <bean id="factory" class="com.itpanhao.factory.DynamicFactory"></bean>-->
+<!--    <bean id="userDao" factory-bean="factory" factory-method="getUserDao" ></bean>-->
+<!--    <bean id="userDao" class="com.itpanhao.dao.impl.UserDaoImpl">-->
+<!--        <property name="username" value="zhangsan"></property>-->
+<!--        <property name="age" value="18"></property>-->
+<!--    </bean>-->
+    <bean id="userDao" class="com.itpanhao.dao.impl.UserDaoImpl">
+        <property name="strList">
+            <list>
+                <value>aaa</value>
+                <value>bbb</value>
+                <value>ccc</value>
+            </list>
+        </property>
+        <property name="userMap">
+            <map>
+                <entry key="u1" value-ref="user1"></entry>
+                <entry key="u2" value-ref="user2"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="p1">ppp1</prop>
+                <prop key="p2">ppp2</prop>
+                <prop key="p3">ppp3</prop>
+            </props>
+        </property>
+        <property name="age" value="18"></property>
+    </bean>
+    <bean id="user1" class="com.itpanhao.domain.User" >
+        <property name="name" value="tom"></property>
+        <property name="addr" value="beijing"></property>
+    </bean>
+    <bean id="user2" class="com.itpanhao.domain.User" >
+        <property name="name" value="lucy"></property>
+        <property name="addr" value="tianjing"></property>
+    </bean>
+<!--    <bean id="userService" class="com.itpanhao.service.Impl.UserServiceImpl" >-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+<!--    <bean id="userService" class="com.itpanhao.service.Impl.UserServiceImpl" p:userDao-ref="userDao">-->
+<!--    </bean>-->
+    <bean id="userService" class="com.itpanhao.service.Impl.UserServiceImpl" >
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
+
+</beans>

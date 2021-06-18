@@ -1,0 +1,9 @@
+com/ph/security/springmvc/config/WebConfig.class
+com/ph/security/springmvc/controller/LoginController.class
+com/ph/security/springmvc/service/AuthenticationServiceImpl.class
+com/ph/security/springmvc/interceptor/SimpleAuthenticationInterceptor.class
+com/ph/security/springmvc/model/UserDto.class
+com/ph/security/springmvc/init/SpringApplicationINitializer.class
+com/ph/security/springmvc/model/AuthenticationRequest.class
+com/ph/security/springmvc/service/AuthenticationService.class
+com/ph/security/springmvc/config/ApplicationConfig.class

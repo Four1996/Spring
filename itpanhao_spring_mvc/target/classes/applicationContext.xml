@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+">
+<!--配置properties文件扫描-->
+    <context:property-placeholder location="jdbc.properties"/>
+<!--    配置数据源-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
+        <property name="user" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <!--配置dao-->
+    <bean id="userDao" class="com.itpanhao.dao.impl.UserDaoImpl"></bean>
+<!--   配置service-->
+    <bean id="userService" class="com.itpanhao.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="itpnahao_mybatis_quick" />
+        <module name="itpanhao_spring_aop" />
+        <module name="itpanhao_spring_test" />
+        <module name="itpanhao_mybatis_anno" />
+        <module name="itpanhao_spring_tx_anno" />
+        <module name="itpanhao_spring_ioc" />
+        <module name="itpanhao_spring_mvc_anno" />
+        <module name="itpanhao_spring_tx" />
+        <module name="itpanhao_spring_mvc" />
+        <module name="itpanhao_mybatis_config" />
+        <module name="itpanhao_spring_interceptor" />
+        <module name="itpanhao_spring_ioc_anno" />
+        <module name="itpanhao_ssm" />
+        <module name="itpanhao_spring_jdbc" />
+        <module name="itpanhao_mybatis_multi" />
+        <module name="itpanhao_mybatis_mapper" />
+        <module name="itpanhao_mybatis_dao" />
+        <module name="itpanhao_spring_exception" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="itpanhao_mybatis_anno" target="8" />
+      <module name="itpanhao_mybatis_config" target="8" />
+      <module name="itpanhao_mybatis_dao" target="8" />
+      <module name="itpanhao_mybatis_mapper" target="8" />
+      <module name="itpanhao_mybatis_multi" target="8" />
+      <module name="itpanhao_spring_aop" target="1.5" />
+      <module name="itpanhao_spring_exception" target="8" />
+      <module name="itpanhao_spring_interceptor" target="8" />
+      <module name="itpanhao_spring_ioc" target="8" />
+      <module name="itpanhao_spring_ioc_anno" target="8" />
+      <module name="itpanhao_spring_jdbc" target="8" />
+      <module name="itpanhao_spring_mvc" target="8" />
+      <module name="itpanhao_spring_mvc_anno" target="8" />
+      <module name="itpanhao_spring_test" target="8" />
+      <module name="itpanhao_spring_tx" target="8" />
+      <module name="itpanhao_spring_tx_anno" target="8" />
+      <module name="itpanhao_ssm" target="8" />
+      <module name="itpnahao_mybatis_quick" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
