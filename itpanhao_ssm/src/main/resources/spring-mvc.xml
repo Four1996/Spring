@@ -14,7 +14,7 @@
     <mvc:annotation-driven/>
 <!--    内部资源视图解析器-->
     <bean id="resourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-IrNF/pages/"></property>
+        <property name="prefix" value="/WEB-INF/pages/"></property>
         <property name="suffix" value=".jsp"></property>
     </bean>
 <!--    开放静态资源的访问权限-->
