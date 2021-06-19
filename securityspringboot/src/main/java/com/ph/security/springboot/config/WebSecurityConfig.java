@@ -2,6 +2,7 @@ package com.ph.security.springboot.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -20,6 +21,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
  * @date: 2021-06-16 21:27
  **/
 @Configuration
+@EnableGlobalMethodSecurity(securedEnabled = true,prePostEnabled = true)//开启基于方法的注解权限配置
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      // 定义用户信息服务（查询用户信息）
     // @Bean
@@ -48,9 +50,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()//屏蔽CSRF控制，即spring security不再限制CSRF
                 .authorizeRequests()
-
-                .antMatchers("/r/r1").hasAuthority("p1")
-                .antMatchers("/r/r2").hasAuthority("p2")
+                // .antMatchers("/r/r1").hasAuthority("p1")
+                // .antMatchers("/r/r2").hasAuthority("p2")
                 .antMatchers("/r/**").authenticated()//所有/r/**的请求必须认证通过
                 .anyRequest().permitAll()//除了/r/**，其他的请求可以访问
                 .and()

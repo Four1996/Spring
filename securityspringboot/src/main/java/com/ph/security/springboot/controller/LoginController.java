@@ -1,6 +1,7 @@
 package com.ph.security.springboot.controller;
 
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,10 +23,12 @@ public class LoginController {
         return getUsername()+"登录成功";
     }
     @GetMapping(value = ("/r/r1"),produces = {"text/plain;charset=UTF-8"})
+    @PreAuthorize("hasAuthority('p1')")//拥有p1权限的才能访问资源r1
     public String r1(){
         return getUsername()+"访问资源r1";
     }
     @GetMapping(value = ("/r/r2"),produces = {"text/plain;charset=UTF-8"})
+    @PreAuthorize("hasAuthority('p2')")//拥有p2权限的才能访问资源r2
     public String r2(){
         return getUsername()+"访问资源r2";
     }
