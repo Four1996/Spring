@@ -1,13 +1,10 @@
-package com.ph.security.distributed.uaa.config;
+package com.ph.security.distributed.order.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.jwt.Jwt;
 import org.springframework.security.oauth2.provider.token.TokenStore;
-import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
-import org.springframework.security.oauth2.provider.token.store.jwk.JwkTokenStore;
 
 /**
  * @program: distributed-security

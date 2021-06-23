@@ -1,5 +1,6 @@
 package com.ph.security.distributed.order.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -11,6 +12,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
 import org.springframework.security.oauth2.provider.token.ResourceServerTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenStore;
 
 /**
  * @program: distributed-security
@@ -24,14 +26,18 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     public static final String RESOURCE_ID = "res1";
 
+    @Autowired
+    TokenStore tokenStore;
+
+
     @Override
-    public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
+    public void configure(ResourceServerSecurityConfigurer resources){
 
         resources
                 // 资源id
                 .resourceId(RESOURCE_ID)
                 // 验证令牌的服务
-                .tokenServices(tokenService())
+                .tokenStore(tokenStore)
                 .stateless(true);
     }
 
@@ -46,14 +52,14 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
     // 资源服务令牌解析服务
-    @Bean
-    public ResourceServerTokenServices tokenService(){
-        // 使用远程服务请求授权服务器校验token，必须制定校验token的url、client_id、client_secret
-        RemoteTokenServices services=new RemoteTokenServices();
-        services.setCheckTokenEndpointUrl("http://localhost:53020/uaa/oauth/check_token");
-        services.setClientId("c1");
-        services.setClientSecret("secret");
-        return services;
-    }
+    // @Bean
+    // public ResourceServerTokenServices tokenService(){
+    //     // 使用远程服务请求授权服务器校验token，必须制定校验token的url、client_id、client_secret
+    //     RemoteTokenServices services=new RemoteTokenServices();
+    //     services.setCheckTokenEndpointUrl("http://localhost:53020/uaa/oauth/check_token");
+    //     services.setClientId("c1");
+    //     services.setClientSecret("secret");
+    //     return services;
+    // }
 
 }
