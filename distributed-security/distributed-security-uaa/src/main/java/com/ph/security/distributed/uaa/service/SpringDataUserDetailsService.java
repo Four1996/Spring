@@ -1,5 +1,6 @@
 package com.ph.security.distributed.uaa.service;
 
+import com.alibaba.fastjson.JSON;
 import com.ph.security.distributed.uaa.dao.UserDao;
 import com.ph.security.distributed.uaa.model.UserDto;
 
@@ -37,8 +38,10 @@ public class SpringDataUserDetailsService implements UserDetailsService {
         // 将permisssionByUserId转成数组
         String[] permissionArray=new String[permissionByUserId.size()];
         permissionByUserId.toArray(permissionArray);
+        //将userDto转成json
+        String principal = JSON.toJSONString(user);
         //登录账号
-        UserDetails userDetails = User.withUsername(user.getUsername()).password(user.getPassword()).authorities(permissionArray).build();
+        UserDetails userDetails = User.withUsername(principal).password(user.getPassword()).authorities(permissionArray).build();
 
         return userDetails;
     }

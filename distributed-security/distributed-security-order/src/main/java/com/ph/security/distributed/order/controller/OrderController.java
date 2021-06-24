@@ -1,6 +1,9 @@
 package com.ph.security.distributed.order.controller;
 
+import com.ph.security.distributed.order.model.UserDTO;
+import org.apache.catalina.User;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +21,9 @@ public class OrderController {
     // 标记拥有p1权限才能访问资源
     @PreAuthorize("hasAnyAuthority('p1')")
     public String r1(){
-        return "访问资源1";
+        //获取用户身份信息
+        UserDTO userDTO = (UserDTO) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        return userDTO.getUsername()+"访问资源1";
     }
 }

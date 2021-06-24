@@ -1,22 +1,21 @@
-package com.ph.security.distributed.order;
+package com.ph.security.distributed.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @program: distributed-security
- * @description: springboot启动类
+ * @description: 启动类
  * @author: panhao
- * @date: 2021-06-20 19:53
+ * @date: 2021-06-23 21:45
  **/
 @SpringBootApplication
+@EnableZuulProxy
 @EnableDiscoveryClient
-// @EnableHystrix
-// @EnableFeignClients(basePackages = {"com.ph.security.distributed.uaa"})
-public class OrderServer {
+public class GatewayServer {
     public static void main(String[] args) {
-        SpringApplication.run(OrderServer.class,args);
+        SpringApplication.run(GatewayServer.class,args);
     }
 }
